@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  node:
+    build:
+      context: ./
+    volumes:
+      - ./:/node
+    ports:
+      - 7000:7000
+
+    tty: true
+    command: ash -c '/bin/ash'
